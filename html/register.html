@@ -1,0 +1,35 @@
+<div class="register" align='center'>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p><h2>Registration</h2></p>
+	<form method="POST" action="register.php">
+		
+		<input class="form-control" type="text" placeholder="Username" name="username">
+		<?php echo $_SESSION ['error']['username']; ?>
+		<br>
+		<input class="form-control" type="password" placeholder="Password" name="password">
+		<br>
+		<input class="form-control" type="password" placeholder="Repeat password" name="passwordre"> 
+		<?php echo $_SESSION ['error']['password']; ?>
+		<br>
+		<input class="form-control" type="text" placeholder="Name" name="name">
+		<?php echo $_SESSION ['error']['name']; ?>
+		<br>
+		<input class="form-control" type="email" placeholder="E-mail" name="email">
+		<?php echo $_SESSION ['error']['email']; ?>
+		<br>
+		<input class="form-control" type="text" placeholder="Phone number" name="phone_number">
+		<?php echo $_SESSION ['error']['phone_number']; ?>
+		<br>
+		<input class="form-control" type="text" placeholder="Address" name="address">
+		<?php echo $_SESSION ['error']['address']; ?>
+		<br>
+		::registererrors
+		<br>
+		<button class="btn btn-group-vertical btn-primary" type="submit" value="Register" name="submit">Register</button>
+	</form>
+</div>
